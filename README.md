@@ -51,43 +51,31 @@ pandas
 
 ## 📊 Data Collection
 
-### 1. Federal Assembly (1990-1992)
+### Step 1: Data Collection (Scraping)
 ```bash
-python federace_scrape.py
-python federace_prezident.py
+# Scrape all parliamentary data sources
+python federace_scrape.py      # Federal Assembly (1990-1992)
+python snemovna_scrape.py      # Chamber of Deputies (2006-2021) 
+python senat_scraper.py        # Senate (historical records)
+python snr_scrape.py           # Slovak National Council (1990)
 ```
-- Scrapes joint sessions, Chamber of People, and Chamber of Nations
-- Extracts stenographic protocols in HTML format
-- Searches for presidential mentions with context
 
-### 2. Chamber of Deputies (2006-2021)
+### Step 2: Presidential Analysis
 ```bash
-python snemovna_scrape.py
-python snemovna_prezident.py
+# Analyze presidential mentions across all sources
+python federace_prezident.py   # Search Federal Assembly transcripts
+python snemovna_prezident.py   # Search Chamber of Deputies PDFs
+python senat_prezident.py      # Search Senate documents
+python snr_prezident.py        # Search Slovak National Council records
 ```
-- Downloads PDF stenographic records
-- Extracts text using multiple PDF processing libraries
-- Analyzes presidential participation patterns
 
-### 3. Senate (Historical)
-```bash
-python senat_scraper.py
-python senat_prezident.py
-```
-- Selenium-based scraping for complex pagination
-- Converts documents to DOCX format for analysis
-- Date-based organization and filtering
+### Data Sources Breakdown:
+- **Federal Assembly**: Joint sessions, Chamber of People, and Chamber of Nations (HTML format)
+- **Chamber of Deputies**: PDF stenographic records with multi-library text extraction
+- **Senate**: Complex pagination with DOCX conversion and date-based filtering
+- **Slovak National Council**: 25 parliamentary sessions with combined HTML parts
 
-### 4. Slovak National Council (1990)
-```bash
-python snr_scrape.py
-python snr_prezident.py
-```
-- Scrapes 25 parliamentary sessions
-- Combines multiple HTML parts per session
-- Searches for qualified presidential mentions
-
-### 5. Government Meetings (1991-2025)
+### Government Meetings (1991-2025)
 Run the Jupyter notebook:
 ```bash
 jupyter notebook vlada_scrape_prezident.ipynb
