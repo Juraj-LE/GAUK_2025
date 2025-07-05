@@ -56,7 +56,7 @@ pandas
 # Scrape all parliamentary data sources
 python federace_scrape.py      # Federal Assembly (1990-1992)
 python snemovna_scrape.py      # Chamber of Deputies (2006-2021) 
-python senat_scraper.py        # Senate (historical records)
+python senat_scraper.py        # Senate (1996-2025)
 python snr_scrape.py           # Slovak National Council (1990)
 ```
 
@@ -69,10 +69,24 @@ python senat_prezident.py      # Search Senate documents
 python snr_prezident.py        # Search Slovak National Council records
 ```
 
+After running each `*_prezident.py` script, a `records_president.txt` file is created in the respective data folders with results in tab-separated format:
+```
+filename | context1 | context2 | context3
+date    url    contexts
+```
+Context extraction captures 2-3 words before and after "prezident" for each found match. Later filtering only mentions followed by colons (speaker identification) in the next few following words can be to remove majority of junk results.
+
+### Presidential Terms Covered
+- **Václav Havel**: 1993-2003
+- **Václav Klaus**: 2003-2013  
+- **Miloš Zeman**: 2013-2023
+- **Petr Pavel**: 2023-present
+
+
 ### Data Sources Breakdown:
 - **Federal Assembly**: Joint sessions, Chamber of People, and Chamber of Nations (HTML format)
 - **Chamber of Deputies**: PDF stenographic records with multi-library text extraction
-- **Senate**: Complex pagination with DOCX conversion and date-based filtering
+- **Senate**: Pagination with DOCX conversion and date-based filtering
 - **Slovak National Council**: 25 parliamentary sessions with combined HTML parts
 
 ### Government Meetings (1991-2025)
@@ -83,26 +97,6 @@ jupyter notebook vlada_scrape_prezident.ipynb
 - Comprehensive scraping of government meeting records
 - Two-phase approach: 2009-2025 (modern) and 1991-2008 (legacy)
 - Statistical analysis and visualization
-
-## 🔍 Analysis Features
-
-### Context Extraction
-All scripts extract contextual information around presidential mentions:
-- **Window size**: 2-3 words before and after "prezident" for the context of found matches
-- **Filtering**: Only mentions followed by colons (speaker identification, which filtered majority junk) in next few following words
-
-### Output Format
-Results are saved in tab-separated format:
-```
-filename | context1 | context2 | context3
-date    url    contexts
-```
-
-### Presidential Terms Covered
-- **Václav Havel**: 1993-2003
-- **Václav Klaus**: 2003-2013  
-- **Miloš Zeman**: 2013-2023
-- **Petr Pavel**: 2023-present
 
 ## ⚙️ Technical Notes
 
