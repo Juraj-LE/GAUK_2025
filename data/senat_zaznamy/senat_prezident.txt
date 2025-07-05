@@ -1,0 +1,23 @@
+1997-03-05	NO_LINK	slovo . President ČR Václav | tehdy pan president řekl :
+1999-03-11	NO_LINK	Benda . Prezident České republiky
+2001-06-27	NO_LINK	jiných . Prezident ČR Václav
+2002-03-14	NO_LINK	slovo . Prezident České republiky
+2003-01-15	NO_LINK	prezidente . Prezident České republiky | o volbě prezidenta z druhého
+2004-03-18	NO_LINK	Klaus , prezident České republiky
+2007-04-13	NO_LINK	řeči . Prezident České republiky
+2008-02-08	NO_LINK	slovo . Prezident ČR Václav
+2008-02-15	NO_LINK	kandidáty na prezidenta republiky : | slovo . Prezident ČR Václav | Náš první prezident napsal : | slovo . Prezident ČR Václav
+2013-03-21	NO_LINK	vystoupení . Prezident ČR Milo
+2013-04-25	NO_LINK	Prosím . Prezident ČR Milo
+2013-06-20	NO_LINK	prezidente . Prezident ČR Milo
+2013-08-21	NO_LINK	slova . Prezident ČR Milo
+2013-12-18	NO_LINK	návrhem . Prezident ČR Milo
+2014-05-29	NO_LINK	návrhem . Prezident ČR Milo
+2023-03-30	NO_LINK	vystoupení . Prezident ČR Petr
+2023-05-31	NO_LINK	, pane prezidente . Prezident | prezidente . Prezident ČR Petr | vystřídala . Prezident ČR Petr
+2023-08-02	NO_LINK	slovo . Prezident ČR Petr | slovo . Prezident ČR Petr | pro pana prezidenta : U
+2023-10-18	NO_LINK	slovo . Prezident ČR Petr | citací izraelského prezidenta Jicchak Herzoga
+2023-12-14	NO_LINK	návrhy . Prezident ČR Petr
+2024-01-24	NO_LINK	Prosím . Prezident ČR Petr | s panem prezidentem ? Senátor
+2024-06-19	NO_LINK	návrhy . Prezident ČR Petr | Díkujeme panu prezidentovi . Nyní
+2024-11-20	NO_LINK	učinil . Prezident ČR Petr
